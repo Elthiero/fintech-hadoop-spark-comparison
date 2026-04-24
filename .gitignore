@@ -1,0 +1,26 @@
+# Python & Virtual Environments
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data Files (CRITICAL)
+# Ignores all CSV files anywhere in the project so you don't break GitHub's 100MB limit
+*.csv
+
+
+# Ignore Hadoop specific hidden files
+.crc
+_SUCCESS
+part-*
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
