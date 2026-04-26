@@ -63,13 +63,14 @@ This project processes the raw **IEEE-CIS Fraud Detection** dataset (originally 
 ```bash
 git clone [https://github.com/Elthiero/fintech-hadoop-spark-comparison.git](https://github.com/Elthiero/fintech-hadoop-spark-comparison.git)
 cd fintech-hadoop-spark-comparison
+mkdir data
 ```
 
-After cloning, add the extract file `train_transaction.csv` to `fintech-hadoop-spark-comparison/data`. **link:** [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection/data)
+After cloning, add the extract file `train_transaction.csv` to `fintech-hadoop-spark-comparison/data`. **link:** `https://www.kaggle.com/c/ieee-fraud-detection/data`
 
 ### 2. Running the MapReduce Job (Hadoop Streaming)
 
-*Note: Ensure the raw data is uploaded to HDFS at `/fintech_project/train_transaction.csv`, and your hadoop services are running.*
+*Note: Ensure the raw data is uploaded to HDFS at `/fintech_project/train_transaction.csv`, the mapper.py and reducer.py are also uploaded to `/fintech_project/scripts`, and your hadoop services are running.*
 
 ```cmd
 hdfs dfs -mkdir /fintech_project
