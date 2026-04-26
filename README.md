@@ -22,7 +22,7 @@ This project processes the raw **IEEE-CIS Fraud Detection** dataset (originally 
 * **File Size:** ~667 MB
 * **Dimensions:** 590,540 rows × 394 columns
 * **Target Features Extracted:** `card4`, `TransactionAmt`, `isFraud`
-* **LINK:** [IEEE-CIS Fraud Detection]([URL](https://www.kaggle.com/c/ieee-fraud-detection/data))
+* **LINK:** IEEE-CIS Fraud Detection - `https://www.kaggle.com/c/ieee-fraud-detection/data`
 
 ---
 
@@ -66,7 +66,7 @@ cd fintech-hadoop-spark-comparison
 mkdir data
 ```
 
-After cloning, add the extract file `train_transaction.csv` to `fintech-hadoop-spark-comparison/data`. **link:** `https://www.kaggle.com/c/ieee-fraud-detection/data`
+After cloning, add the extract file `train_transaction.csv` to `fintech-hadoop-spark-comparison/data`
 
 ### 2. Running the MapReduce Job (Hadoop Streaming)
 
