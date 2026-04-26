@@ -65,7 +65,7 @@ git clone [https://github.com/Elthiero/fintech-hadoop-spark-comparison.git](http
 cd fintech-hadoop-spark-comparison
 ```
 
-After cloning, add the extract file `train_transaction.csv` to `fintech-hadoop-spark-comparison/data`. **link:** [IEEE-CIS Fraud Detection]([URL](https://www.kaggle.com/c/ieee-fraud-detection/data))
+After cloning, add the extract file `train_transaction.csv` to `fintech-hadoop-spark-comparison/data`. **link:** [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection/data)
 
 ### 2. Running the MapReduce Job (Hadoop Streaming)
 
@@ -88,6 +88,12 @@ hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-*.jar ^
   -reducer "C:\Users\thier\AppData\Local\Programs\Python\Python312\python.exe reducer.py" ^
   -input /fintech_project/train_transaction.csv ^
   -output /fintech_project/fraud_analysis_raw_data
+```
+
+To see the output:
+
+```cmd
+hdfs dfs -cat /fintech_project/fraud_analysis_raw_data/part-00000
 ```
 
 ### 3. Running the Apache Spark Job
